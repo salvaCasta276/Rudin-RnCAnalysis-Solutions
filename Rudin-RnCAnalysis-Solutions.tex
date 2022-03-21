@@ -1,0 +1,40 @@
+
+\documentclass{article}
+
+\author{Salvador Castagnino \\ scastagnino@itba.edu.ar}
+\date{}
+\title{Real and Complex Analysis Solutions}
+
+\begin{document}
+
+\maketitle
+
+\begin{observation}\textbf{Observation}
+
+Let $0 < r < p < s < +\infty$ with $p-r=s-p$ which is the same as $2p=r+s$ then using Holder's inequality we get,  
+\[
+    \|f\|_p^p = \|f^p\|_1 = \|f^{\frac{r}{2}}f^{\frac{s}{2}}\|_1 \le \|f^{\frac{r}{2}}\|_2 \|f^{\frac{s}{2}}\|_2 = \left( \|f\|_r^r \|f\|_s^s   \right)^{\frac{1}{2}}    
+\]
+thus,
+\[
+    \|f\|_p^p \le \sqrt{\|f\|_r^r \|f\|_s^s  }   
+\]
+\end{observation}
+
+
+\begin{exercise}$\textbf{Exercise 10.}$
+Given that $fg\ge1$ and both $f$ and $g$ are positive we have $f \ge \frac{1}{g}$ and using Holder's inequality and the fact that $\mu\left(\Omega\right)=1$,
+
+\[
+    1 = \|1\|_1 = \|g^{\frac{1}{2}}g^{-\frac{1}{2}}\|_1 \le \|g^{\frac{1}{2}}\|_2 \|g^{-\frac{1}{2}}\|_2 =  \left( \|g\|_1 \|g^{-1}\|_1 \right) ^{\frac{1}{2}} \le \left(\|g\|_1 \|f\|_1 \right)^{\frac{1}{2}} 
+\]
+thus,
+
+\[
+    1 \le \int_\Omega f\: d\mu \int_\Omega g\: d\mu  
+\]
+
+\end{exercise}
+
+
+\end{document}
