@@ -15,7 +15,7 @@
     \[
        \phi \left( \left( 1-t_0 \right) x + t_0 y \right) > \left( 1-t_0 \right) \phi \left( x \right) + t_0 \phi \left( y \right)  
     \]
-    and without loss of generality let's assume $x < y$. Let's define $g,h:[0,1] \rightarrow \mathbb{R}$ such that,
+    and assume $x < y$. Let's define $g,h:[0,1] \rightarrow \mathbb{R}$ such that,
     \[
        g \left( t \right) = \phi \left( \left( 1-t \right) x + t y \right)
     \]
@@ -23,7 +23,7 @@
        h \left( t \right) = \left( 1-t \right) \phi \left( x \right) + t \phi \left( y \right)  
         
     \]
-    and let $f = h - g$. We define the nonempty sets $A = \{t \in [0,t_0\left)\ |\ f(t)=0\}$ and $B = \{t \in \left(t_0, 1]\ |\ f(t)=0\}$ given that $f \left( 0 \right) = f \left( 1 \right) = 0$, and let $t_a = \sup A$ and $t_b = \sup B$, we want to see that $t_a \in A$  and $t_b \in B$. Let $\{a_n\}$ and $\{b_n\}$ be sequences in $A$ and $B$ which converge to $t_a$ and $t_b$ respectively, by continuity of $f$ we can see that
+    and let $f = h - g$. We define the nonempty sets $A = \{t \in [0,t_0\left)\ |\ f(t)=0\}$ and $B = \{t \in \left(t_0, 1]\ |\ f(t)=0\}$ given that $f \left( 0 \right) = f \left( 1 \right) = 0$, and let $t_a = \sup A$ and $t_b = \inf B$, we want to see that $t_a \in A$  and $t_b \in B$. Let $\{a_n\}$ and $\{b_n\}$ be sequences in $A$ and $B$ which converge to $t_a$ and $t_b$ respectively, by continuity of $f$ we can see that
     \[
         0 = \lim_{n \to \infty} f \left( a_n \right) = f \left( \lim_{n \to \infty} a_n \right) = f \left( t_a \right) 
     \]
