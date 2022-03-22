@@ -11,7 +11,7 @@
 
 \begin{exercise}\textbf{Exercise 3.}
 
-    Let's assume that $\phi$ is not convex in $ \left( a,b \right)   $ then there exist $x,y \in \left( a,b \right) $ and $t_0 \in [0,1]$ such that
+    Let's suppose that $\phi$ is not convex in $ \left( a,b \right)   $ then there exist $x,y \in \left( a,b \right) $ and $t_0 \in [0,1]$ such that
     \[
        \phi \left( \left( 1-t_0 \right) x + t_0 y \right) > \left( 1-t_0 \right) \phi \left( x \right) + t_0 \phi \left( y \right)  
     \]
@@ -27,7 +27,7 @@
     \[
         0 = \lim_{n \to \infty} f \left( a_n \right) = f \left( \lim_{n \to \infty} a_n \right) = f \left( t_a \right) 
     \]
-    then $t_a \in A$ and the proof for $t_b \in B$ is analogous. As $f \left( t_0 \right) < 0$ then $t_a < t_0 < t_b$ and by continuity of $f$ and the definition of $t_a$ and $t_b$ we have that $f \left( t \right) < 0$ for all $t \in \left( t_a,t_b \right)$. Finally we take $x'= \left( 1-t_a \right) x+t_ay$ and $y' = \left( 1-t_b \right) x+t_by$ and by working algebraically over $f \left( \frac{t_a+t_b}{2} \right) < 0$ we arrive at the following inquality
+    With this and the fact that $t_a < t_0 < t_b$ as $f \left( t_0 \right) < 0$ we have that $t_a \in A$ and the proof for $t_b \in B$ is analogous. Now by the definition of $t_a$ and $t_b$ we have that $f \left( t \right) < 0$ for all $t \in \left( t_a,t_b \right)$. Finally we take $x'= \left( 1-t_a \right) x+t_ay$ and $y' = \left( 1-t_b \right) x+t_by$ and by working algebraically over $f \left( \frac{t_a+t_b}{2} \right) < 0$ we arrive at the following inquality
     \[
         \phi \left( \frac{x'+y'}{2} \right) > \frac{\phi \left( x' \right) + \phi \left( y' \right) }{2}
     \]

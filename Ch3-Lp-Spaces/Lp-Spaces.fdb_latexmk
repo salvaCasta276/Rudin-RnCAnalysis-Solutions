@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1647911032 "Lp-Spaces.tex" "Lp-Spaces.pdf" "Lp-Spaces" 1647911032
+["pdflatex"] 1647912009 "Lp-Spaces.tex" "Lp-Spaces.pdf" "Lp-Spaces" 1647912009
   "/etc/texmf/web2c/texmf.cnf" 1620612993 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
@@ -33,9 +33,9 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1581979058 38841 ce3692aa899bb693b90b87eaa5d4d84e ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1620613001 128028 f533b797fba58d231669ea19e894e23e ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1620613005 4791331 9d0a59538684bfe7553e905e8b3e54f3 ""
-  "Lp-Spaces.aux" 1647911008 8 a94a2480d3289e625eea47cd1b285758 "pdflatex"
-  "Lp-Spaces.tex" 1647911030 3436 1c5b708e8a4fc471d0a690d425eadb9e ""
+  "Lp-Spaces.aux" 1647911968 8 a94a2480d3289e625eea47cd1b285758 "pdflatex"
+  "Lp-Spaces.tex" 1647911994 3446 a08afb71309e005f5d5f54f345391885 ""
   (generated)
-  "Lp-Spaces.aux"
-  "Lp-Spaces.log"
   "Lp-Spaces.pdf"
+  "Lp-Spaces.log"
+  "Lp-Spaces.aux"
