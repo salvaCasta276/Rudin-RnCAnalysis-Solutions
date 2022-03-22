@@ -9,6 +9,47 @@
 
 \maketitle
 
+\begin{exercise}\textbf{Exercise 3.}
+
+    Let's assume that $\phi$ is not convex in $ \left( a,b \right)   $ then there exist $x,y \in \left( a,b \right) $ and $t_0 \in [0,1]$ such that
+    \[
+       \phi \left( \left( 1-t_0 \right) x + t_0 y \right) > \left( 1-t_0 \right) \phi \left( x \right) + t_0 \phi \left( y \right)  
+    \]
+    and without loss of generality let's assume $x < y$. Let's define $g,h:[0,1] \rightarrow \mathbb{R}$ such that,
+    \[
+       g \left( t \right) = \phi \left( \left( 1-t \right) x + t y \right)
+    \]
+    \[
+       h \left( t \right) = \left( 1-t \right) \phi \left( x \right) + t \phi \left( y \right)  
+        
+    \]
+    and let $f = h - g$. We define the nonempty sets $A = \{t \in [0,t_0\left)\ |\ f(t)=0\}$ and $B = \{t \in \left(t_0, 1]\ |\ f(t)=0\}$ given that $f \left( 0 \right) = f \left( 1 \right) = 0$, and let $t_a = \sup A$ and $t_b = \sup B$, we want to see that $t_a \in A$  and $t_b \in B$. Let $\{a_n\}$ and $\{b_n\}$ be sequences in $A$ and $B$ which converge to $t_a$ and $t_b$ respectively, by continuity of $f$ we can see that
+    \[
+        0 = \lim_{n \to \infty} f \left( a_n \right) = f \left( \lim_{n \to \infty} a_n \right) = f \left( t_a \right) 
+    \]
+    then $t_a \in A$ and the proof for $t_b \in B$ is analogous. As $f \left( t_0 \right) < 0$ then $t_a < t_0 < t_b$ and by continuity of $f$ and the definition of $t_a$ and $t_b$ we have that $f \left( t \right) < 0$ for all $t \in \left( t_a,t_b \right)$. Finally we take $x'= \left( 1-t_a \right) x+t_ay$ and $y' = \left( 1-t_b \right) x+t_by$ and by working algebraically over $f \left( \frac{t_a+t_b}{2} \right) < 0$ we arrive at the following inquality
+    \[
+        \phi \left( \frac{x'+y'}{2} \right) > \frac{\phi \left( x' \right) + \phi \left( y' \right) }{2}
+    \]
+    which is a clear contradiction, as we wanted. This concludes the proof.
+
+    
+\end{exercise}
+
+\bigbreak
+
+\begin{observation}\textbf{Observation}
+    This proof shows that to see that convexity holds it sufices to show that given each pair of points $x,y \in \left( a,b \right) $ there exists a $t \in [0,1]$ (not necessarily $\frac{1}{2}$ ) such that $\phi \left( \left( 1-t \right) x + t y \right) \le  \left( 1-t \right) \phi \left( x \right) + t \phi \left( y \right)$. 
+\end{observation}
+
+\bigbreak
+
+\begin{exercise}\textbf{Exercise 4}
+    
+\end{exercise}
+
+\bigbreak
+
 \begin{observation}\textbf{Observation}
 
 Let $0 < r < p < s < +\infty$ with $p-r=s-p$ which is the same as $2p=r+s$ then using Holder's inequality we get,  
@@ -21,6 +62,7 @@ thus,
 \]
 \end{observation}
 
+\bigbreak
 
 \begin{exercise}$\textbf{Exercise 10.}$
 Given that $fg\ge1$ and both $f$ and $g$ are positive we have $f \ge \frac{1}{g}$ and using Holder's inequality and the fact that $\mu\left(\Omega\right)=1$,

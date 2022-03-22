@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.5.9)  21 MAR 2022 19:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.5.9)  21 MAR 2022 21:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -51,14 +51,14 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 10.
 
 
-./Rudin-RnCAnalysis-Solutions.tex:12: LaTeX Error: Environment observation undefined.
+./Rudin-RnCAnalysis-Solutions.tex:12: LaTeX Error: Environment exercise undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.12 \begin{observation}
-                        \textbf{Observation}
+l.12 \begin{exercise}
+                     \textbf{Exercise 3.}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -67,31 +67,65 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 14.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 14.
+./Rudin-RnCAnalysis-Solutions.tex:18: Undefined control sequence.
+l.18 ...et's define $g,h:[0,1] \rightarrow \mathbb
+                                                  {R}$ such that,
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-./Rudin-RnCAnalysis-Solutions.tex:22: LaTeX Error: \begin{document} ended by \end{observation}.
+./Rudin-RnCAnalysis-Solutions.tex:24: Missing $ inserted.
+<inserted text> 
+                $
+l.24 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./Rudin-RnCAnalysis-Solutions.tex:24: Display math should end with $$.
+<to be read again> 
+                   \par 
+l.24 
+     
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+
+./Rudin-RnCAnalysis-Solutions.tex:25: LaTeX Error: Bad math environment delimiter.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.22 \end{observation}
-                      
+l.25     \]
+           
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
+./Rudin-RnCAnalysis-Solutions.tex:26: Missing \right. inserted.
+<inserted text> 
+                \right .
+l.26 ...ts $A = \{t \in [0,t_0\left)\ |\ f(t)=0\}$
+                                                   and $B = \{t \in \left(t_...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
 
-./Rudin-RnCAnalysis-Solutions.tex:25: LaTeX Error: Environment exercise undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.25 \begin{exercise}
-                     $\textbf{Exercise 10.}$
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+./Rudin-RnCAnalysis-Solutions.tex:26: Missing \right. inserted.
+<inserted text> 
+                \right .
+l.26 ...d $B = \{t \in \left(t_0, 1]\ |\ f(t)=0\}$
+                                                   given that $f \left( 0 \r...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
 
 
 ./Rudin-RnCAnalysis-Solutions.tex:37: LaTeX Error: \begin{document} ended by \end{exercise}.
@@ -106,22 +140,127 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
+
+./Rudin-RnCAnalysis-Solutions.tex:41: LaTeX Error: Environment observation undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.41 \begin{observation}
+                        \textbf{Observation}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./Rudin-RnCAnalysis-Solutions.tex:43: LaTeX Error: \begin{document} ended by \end{observation}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.43 \end{observation}
+                      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./Rudin-RnCAnalysis-Solutions.tex:47: LaTeX Error: Environment exercise undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.47 \begin{exercise}
+                     \textbf{Exercise 4}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./Rudin-RnCAnalysis-Solutions.tex:49: LaTeX Error: \begin{document} ended by \end{exercise}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.49 \end{exercise}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./Rudin-RnCAnalysis-Solutions.tex:53: LaTeX Error: Environment observation undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.53 \begin{observation}
+                        \textbf{Observation}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./Rudin-RnCAnalysis-Solutions.aux) ) 
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+
+./Rudin-RnCAnalysis-Solutions.tex:63: LaTeX Error: \begin{document} ended by \end{observation}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.63 \end{observation}
+                      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./Rudin-RnCAnalysis-Solutions.tex:67: LaTeX Error: Environment exercise undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.67 \begin{exercise}
+                     $\textbf{Exercise 10.}$
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./Rudin-RnCAnalysis-Solutions.tex:79: LaTeX Error: \begin{document} ended by \end{exercise}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.79 \end{exercise}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[2] (./Rudin-RnCAnalysis-Solutions.aux) ) 
 Here is how much of TeX's memory you used:
  391 strings out of 483183
  6689 string characters out of 5966293
- 234602 words of memory out of 5000000
+ 238602 words of memory out of 5000000
  15480 multiletter control sequences out of 15000+600000
  535681 words of font info for 35 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 25i,6n,19p,241b,199s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 25i,6n,19p,493b,199s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on Rudin-RnCAnalysis-Solutions.pdf (1 page, 113288 bytes).
+Output written on Rudin-RnCAnalysis-Solutions.pdf (2 pages, 124990 bytes).
 PDF statistics:
- 56 PDF objects out of 1000 (max. 8388607)
- 40 compressed objects within 1 object stream
+ 59 PDF objects out of 1000 (max. 8388607)
+ 42 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
