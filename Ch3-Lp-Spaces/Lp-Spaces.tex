@@ -44,9 +44,32 @@
 
 \bigbreak
 
-\begin{exercise}\textbf{Exercise 4}
-    
-\end{exercise}
+\begin{exercise}\textbf{Exercise 4.}
+    Let $f$ be a complex measurable function on $X$ and $\mu$ a positive measura on $X$ define
+    \[
+        \phi \left( p \right) = \int_X |f|^p\: d\mu = \|f\|_p^p \quad \left( 0 < p < \infty \right) 
+    \]
+    and now let $E = \{p: \phi \left( p \right) < \infty\}$ and assume $0 < \|f\|_\infty$. Let's begin by characterizing $E$. Let $0<p<s<\infty$ and $x \in [0, \infty \left)$ then $x^p < x^s$ iff $1 < x$ and $x^s < x^p$ iff $x < 1$. With this in mind if $0<r<p<s<\infty$ then $|f|^p \le max\{|f|^r,|f|^s\} \le |f|^r+|f|^s$ and we get,
+    \[
+        \int_X |f|^p\: d\mu \le \int_X |f|^r\: d\mu + \int_X |f|^s\: d\mu 
+    \]
+    Suppose that $p,r \in E$ then $p \in E$, which proves statement (a).
+
+    As a consequence of (a) we see that $E$ is a connected set and with this in mind, supposing $E$ is nonempty, we can see that $E$ is an interval with endpoints $a= \inf E$ and $b = \sup E$, this interval will be closed or not if $E$ contains them or not, but for sure $E^o= \left( a,b \right) $.
+
+    To prove that $\log \phi$ is convex in $E^o$ we take $x,y \in \left( a,b \right) $ and $t \in [0,1]$. By the properties of the logarithm we get,
+    \[
+        \left( 1-t \right) \log \phi \left( x \right) + t \log \phi \left( t \right) = \log \left( \phi \left( x\right)^{1-t} \phi \left( y \right)^t \right) 
+    \]
+    given that the logarithm is a non decreasing function convexity holds if and only if
+    \[
+        \phi \left( (1-t)x + ty \right) \le \phi \left( x \right)^{1-t} \phi \left( y \right)^t
+    \]
+    rewriting $\phi$ on both sides in terms of Lp norms we get the following,
+    \[
+        \|f^{ \left( 1-t \right) x} f^{ty}\|_1 \le \|f^{ \left( 1-t \right) x}\|_ {\left( 1-t \right)^{-1} } \|f^{ty}\|_{t^{-1}}   
+    \]
+    finally, given that $1 \le \left( 1-t \right)^{-1}$ and $1 \le  t^{-1} $ are conjugate exponents, the last inequallity hold by Holder's inequality and this concludes the proof.
 
 \bigbreak
 
@@ -61,6 +84,8 @@ thus,
     \|f\|_p^p \le \sqrt{\|f\|_r^r \|f\|_s^s  }   
 \]
 \end{observation}
+
+\end{exercise}
 
 \bigbreak
 
