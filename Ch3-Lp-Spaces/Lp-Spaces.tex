@@ -111,6 +111,23 @@ thus,
 
 \bigbreak
 
+\begin{exercise}\textbf{Exercise 5.}
+    In order to prove that $ \|f\|_p \le \|f\|_r$ if $0 < p < r \le \infty$ we start by looking at case in which both $p$ and $r$ are finite. For every $x \in \left( 0,\infty \right) $ the function $x^{c}$ is twice differentiable and we have that
+    \[
+        \left( x^c \right)'' = \left( x^{c-1}c \right) ' = c \left( c-1 \right) x^{c-2}
+    \]
+    Observe that if $1 \le c$, the expression above is nonnegative for all $x \in \left( 0,\infty \right)$ and thus $x^c$ convex over that interval. With this in mind and the fact that $\mu \left( \Omega \right) = 1$ and $1 \le \frac{r}{p}$ we will use Jensen's Inequality to prove the result. Let $A = \{x \in \Omega | f \left( x \right) \neq 0 \}$ (the integral over it's complement is exactly $0$ and in this way $f \left( A \right) \subset \left( 0,\infty \right)$), then  
+    \[
+        \|f\|_p = \left( \int_A |f|^p\: d\mu  \right)^{\frac{r}{rp}} \le \left( \int_A |f|^{\frac{rp}{p}}\: d\mu  \right)^\frac{1}{r} = \|f\|_r 
+    \]
+    and this concludes the proof for the finite case.
+
+    Now let $r = \infty$ 
+    
+\end{exercise}
+
+\bigbreak
+
 \begin{exercise}$\textbf{Exercise 10.}$
 Given that $fg\ge1$ and both $f$ and $g$ are positive we have $f \ge \frac{1}{g}$ and using Holder's inequality and the fact that $\mu\left(\Omega\right)=1$,
 
