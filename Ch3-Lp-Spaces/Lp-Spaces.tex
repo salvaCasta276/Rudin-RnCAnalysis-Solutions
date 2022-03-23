@@ -53,15 +53,19 @@
     \[
         \int_X |f|^p\: d\mu \le \int_X |f|^r\: d\mu + \int_X |f|^s\: d\mu 
     \]
-    Suppose that $p,r \in E$ then $p \in E$, which proves statement (a).
+    Suppose that $s,r \in E$ then $p \in E$, which proves statement (a).
+
+\bigbreak
 
     As a consequence of (a) we see that $E$ is a connected set and with this in mind, supposing $E$ is nonempty, we can see that $E$ is an interval with endpoints $a= \inf E$ and $b = \sup E$, this interval will be closed or not if $E$ contains them or not, but for sure $E^o= \left( a,b \right) $.
 
-    To prove that $\log \phi$ is convex in $E^o$ we take $x,y \in \left( a,b \right) $ and $t \in [0,1]$. By the properties of the logarithm we get,
+\bigbreak
+
+    To prove that $\log \phi$ is convex in $E^o$ we take $x,y \in \left( a,b \right) $ and $t \in \left( 0,1 \right) $. By the properties of the logarithm we get,
     \[
         \left( 1-t \right) \log \phi \left( x \right) + t \log \phi \left( t \right) = \log \left( \phi \left( x\right)^{1-t} \phi \left( y \right)^t \right) 
     \]
-    given that the logarithm is a non decreasing function convexity holds if and only if
+    given that the logarithm is a nondecreasing function, convexity holds if and only if
     \[
         \phi \left( (1-t)x + ty \right) \le \phi \left( x \right)^{1-t} \phi \left( y \right)^t
     \]
@@ -70,6 +74,24 @@
         \|f^{ \left( 1-t \right) x} f^{ty}\|_1 \le \|f^{ \left( 1-t \right) x}\|_ {\left( 1-t \right)^{-1} } \|f^{ty}\|_{t^{-1}}   
     \]
     finally, given that $1 \le \left( 1-t \right)^{-1}$ and $1 \le  t^{-1} $ are conjugate exponents, the last inequallity hold by Holder's inequality and this concludes the proof.
+
+\bigbreak
+
+    To prove that $\phi$ is continous in $E$ we start by noticing that $\log \phi$ is convex in $ \left( a,b \right) $ which implies convexity of $\phi$ in $ \left( a,b \right) $ which in turn implies continuity of $\phi$ in $ \left( a,b \right) $, so we only need to prove continuity on a and b, in case they are elements of $E$.
+
+    Let $\{p_n\}$ be a sequence in $ \left( a,b \right) $ which converges to $a$ and let's suppose $a \in E$, we will show that $\phi \left( p_n \right) $ converges to $\phi \left( a \right) $, the proof for $b$ is analogous. By linearity of the integral and properties of the absolute value we get
+    \[
+        |\phi \left( p_n \right) - \phi \left( a \right) | = | \int_X |f^{p_n}| - |f^a|\: d\mu | \le \int_X ||f^{p_n}|-|f^a||\: d\mu \le \int_X |f^{p_n} - f^a|\: d\mu 
+    \]
+    Also, by continuity of the exponential we know that $f^{p_n}$ converges pointwise to $f^a$ as $n$ goes to infinity so it sufices to find a real function $g \in L^1 \left( \mu \right) $ such that $|f^{p_n}| \le g$. Let $g=|f^a|+|f^{p_M}|$ with $p_M$ the greatest element of the sequence $\{p_n\}$ which exists given the convergence of the sequence. Then we can see that $a \le p_n \le p_M$ for all $1 \le n$ and as mentioned above we have
+    \[
+        |f|^{p_n} \le \max \{ |f|^a , |f|^{p_M}\} \le |f|^a + |f|^{p_M} = g
+    \]
+    Finally by Lebesgue's Dominated Convergence Theorem we get that
+    \[
+        \int_X |f^{p_n} - f^a|\: d\mu \rightarrow 0   
+    \]
+    which concludes the proof of (b).
 
 \bigbreak
 
