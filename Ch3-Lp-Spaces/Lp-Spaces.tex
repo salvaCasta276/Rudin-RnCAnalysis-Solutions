@@ -45,7 +45,7 @@
 \bigbreak
 
 \begin{exercise}\textbf{Exercise 4.}
-    Let $f$ be a complex measurable function on $X$ and $\mu$ a positive measura on $X$ define
+    Let $f$ be a complex measurable function on $X$ and $\mu$ a positive measure on $X$, define
     \[
         \phi \left( p \right) = \int_X |f|^p\: d\mu = \|f\|_p^p \quad \left( 0 < p < \infty \right) 
     \]
@@ -61,7 +61,7 @@
 
 \bigbreak
 
-    To prove that $\log \phi$ is convex in $E^o$ we take $x,y \in \left( a,b \right) $ and $t \in \left( 0,1 \right) $. By the properties of the logarithm we get,
+    To prove that $\log \phi$ is convex in $E^o$ we start by proving that the composition is well defined, in other words, $\phi$ is never zero. If $\phi \left( p \right) = 0$ for some $p \in E^o $ then $|f|=0$ a.e. on $X$ and this implies $\|f\|_\infty = 0$ contradicting our assumption, thus the composition is well defined and we proceed to prove convexity. Take $x,y \in \left( a,b \right) $ and $t \in \left( 0,1 \right) $. By the properties of the logarithm we get,
     \[
         \left( 1-t \right) \log \phi \left( x \right) + t \log \phi \left( t \right) = \log \left( \phi \left( x\right)^{1-t} \phi \left( y \right)^t \right) 
     \]
@@ -73,7 +73,7 @@
     \[
         \|f^{ \left( 1-t \right) x} f^{ty}\|_1 \le \|f^{ \left( 1-t \right) x}\|_ {\left( 1-t \right)^{-1} } \|f^{ty}\|_{t^{-1}}   
     \]
-    finally, given that $1 \le \left( 1-t \right)^{-1}$ and $1 \le  t^{-1} $ are conjugate exponents, the last inequallity hold by Holder's inequality and this concludes the proof.
+    Given that $1 \le \left( 1-t \right)^{-1}$ and $1 \le  t^{-1} $ are conjugate exponents, the last inequallity holds by Holder's inequality and this concludes the proof.
 
 \bigbreak
 
