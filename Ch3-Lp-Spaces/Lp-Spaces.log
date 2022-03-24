@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.5.9)  23 MAR 2022 10:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.5.9)  24 MAR 2022 16:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -268,20 +268,46 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.134 \begin{exercise}
-                      $\textbf{Exercise 10.}$
+                      \textbf{Exercise 7.}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 [3]
 
-./Lp-Spaces.tex:146: LaTeX Error: \begin{document} ended by \end{exercise}.
+./Lp-Spaces.tex:149: LaTeX Error: \begin{document} ended by \end{exercise}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.146 \end{exercise}
+l.149 \end{exercise}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./Lp-Spaces.tex:153: LaTeX Error: Environment exercise undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.153 \begin{exercise}
+                      $\textbf{Exercise 10.}$
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./Lp-Spaces.tex:165: LaTeX Error: \begin{document} ended by \end{exercise}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.165 \end{exercise}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -295,9 +321,9 @@ Here is how much of TeX's memory you used:
  15483 multiletter control sequences out of 15000+600000
  536296 words of font info for 37 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 25i,6n,19p,495b,198s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 25i,8n,19p,495b,198s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on Lp-Spaces.pdf (4 pages, 152712 bytes).
+Output written on Lp-Spaces.pdf (4 pages, 156624 bytes).
 PDF statistics:
  73 PDF objects out of 1000 (max. 8388607)
  52 compressed objects within 1 object stream

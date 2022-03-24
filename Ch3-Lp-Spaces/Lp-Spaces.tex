@@ -131,6 +131,25 @@ thus,
 
 \bigbreak
 
+\begin{exercise}\textbf{Exercise 7.}
+
+    Let $0 < p < s < \infty$, an example for the inclusion $L^s \left(  \mu\right)  \subset L^p \left( \mu \right) $ can easily be constructed using Ex.5.
+
+    Let $X = \left( 1, \infty \right) $ and $m$ the Lebesgue Measure, we see thath neither of the inclusions hold observing that, on the one hand, $\frac{1}{x} \notin L^1 \left( 1, \infty \right)$ and $\frac{1}{x} \in L^2 \left( 1, \infty \right) $ and on the other, (the example i gave had an error, i'm working on it ...).
+
+    The remaining inclusion is more interesting, we take $X = N$ with the counting measure over the power set of $N$. Observe that all measurable functions in this case will be just sequences of complex numbers so if $f=\{a_n\}$ we have,
+    \[
+        \|f\|_p^p = \int_X |f|^p\: d\mu = \sum_{n=1}^{\infty} |a_n|^p 
+    \]
+    Suppose $\{a_n\} \in \ell^p \left( N \right)$ then the sequence $\{|a_n|^p\}$ converges to 0 and thus there exists a natural number $M$ such that $|a_n|^p < 1$ for all $M < n$. Given that $1 < \frac{s}{p}$ we have that $|a_n|^s = \left( |a_n|^p \right)^\frac{s}{p} < |a_n|^p$ for all $n$ greater than $M$ and with that in mind we get,
+    \[
+       \sum_{n=1}^{\infty} |a_n|^s = \sum_{n=1}^{M} |a_n|^s + \sum_{n=M+1}^{\infty} |a_n|^s < \sum_{n=1}^{M} |a_n|^s + \sum_{n=M+1}^{\infty} |a_n|^p < \infty  
+    \]
+    As we wanted, $\{a_n\} \in \ell ^p \left( N \right) $, which concludes the proof.
+\end{exercise}
+
+\bigbreak
+
 \begin{exercise}$\textbf{Exercise 10.}$
 Given that $fg\ge1$ and both $f$ and $g$ are positive we have $f \ge \frac{1}{g}$ and using Holder's inequality and the fact that $\mu\left(\Omega\right)=1$,
 
