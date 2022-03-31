@@ -1,5 +1,6 @@
-
 \documentclass{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
 
 \author{Salvador Castagnino \\ scastagnino@itba.edu.ar}
 \date{}
@@ -144,15 +145,15 @@ thus,
         \sum_{n=0}^{\infty} \left [\ln \left( \frac{1}{e^n} \right)  - \ln \left( \frac{1}{e^{n+1}} \right) \right] = \sum_{n=0}^{\infty} \ln \left( e \right) = \infty 
     \]
 
-    For the remaining inclusion we take $X = N$ with the Counting Measure over the power set of $N$. Observe that all measurable functions in this case will be just sequences of complex numbers so if $f=\{a_n\}$ we have,
+    For the remaining inclusion we take $X = \mathbb{N}$ with the Counting Measure over the power set of $\mathbb{N}$. Observe that all measurable functions in this case will be just sequences of complex numbers so if $f=\{a_n\}$ we have,
     \[
         \|f\|_p^p = \int_X |f|^p\: d\mu = \sum_{n=1}^{\infty} |a_n|^p 
     \]
-    Suppose $\{a_n\} \in \ell^p \left( N \right)$ then the sequence $\{|a_n|^p\}$ converges to 0 and thus there exists a natural number $M$ such that $|a_n|^p < 1$ for all $M < n$. Given that $1 < \frac{s}{p}$ we have that $|a_n|^s = \left( |a_n|^p \right)^\frac{s}{p} < |a_n|^p$ for all $n$ greater than $M$ and with that in mind we get,
+    Suppose $\{a_n\} \in \ell^p \left( \mathbb{N} \right)$ then the sequence $\{|a_n|^p\}$ converges to 0 and thus there exists a natural number $M$ such that $|a_n|^p < 1$ for all $M < n$. Given that $1 < \frac{s}{p}$ we have that $|a_n|^s = \left( |a_n|^p \right)^\frac{s}{p} < |a_n|^p$ for all $n$ greater than $M$ and with that in mind we get,
     \[
        \sum_{n=1}^{\infty} |a_n|^s = \sum_{n=1}^{M} |a_n|^s + \sum_{n=M+1}^{\infty} |a_n|^s < \sum_{n=1}^{M} |a_n|^s + \sum_{n=M+1}^{\infty} |a_n|^p < \infty  
     \]
-    As we wanted, $\{a_n\} \in \ell ^p \left( N \right) $, which concludes the proof.
+    As we wanted, $\{a_n\} \in \ell ^s \left( \mathbb{N} \right) $, which concludes the proof.
 \end{exercise}
 
 \bigbreak
@@ -168,6 +169,34 @@ thus,
 \[
     1 \le \int_\Omega f\: d\mu \int_\Omega g\: d\mu  
 \]
+
+\end{exercise}
+
+\pagebreak
+
+\begin{exercise}\textbf{Exercise 17.}
+   We start by looking at the case in which $1 \le  p < \infty$, we want to see that,
+   \begin{equation}
+       | \alpha - \beta |^p \le 2^{p-1} \left( |\alpha|^p + |\beta|^p \right) 
+   \end{equation}
+   for every $\alpha$ and $\beta$ complex numbers. Let $X = [0,1]$ and $\mu$ the Lebesgue Measure, we define the complex function $f$ over $[0,1]$ such that
+   \[
+       f \left( x \right) =  
+       \begin{cases}
+           2\alpha & \text{if}\  0 \le x < \frac{1}{2} \\
+           2\beta & \text{if}\  \frac{1}{2} \le x \le 1
+       \end{cases}
+   \]
+   Rearrangin $ \left( 1 \right) $ we get,
+   \begin{equation}
+       |\alpha - \beta| \le \left( \frac{1}{2} \left( 2\alpha \right)^p + \frac{1}{2} \left( 2\beta \right) ^p \right) ^{\frac{1}{p}} = \|f\|_p 
+   \end{equation}
+   Observing that $\mu \left( X \right) = 1$ and $0 < \|f\|_\infty $ by Ex.5 we know that $\|f\|_1 $ \le $\|f\|_p $ and we have
+   \begin{equation}
+       |\alpha - \beta| \le |\alpha| + |\beta| = \|f\|_1 \le \|f\|_p 
+   \end{equation}
+   which concludes the proof. 
+
 
 \end{exercise}
 
