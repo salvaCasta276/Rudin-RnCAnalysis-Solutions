@@ -11,18 +11,16 @@
 \maketitle
 
 \begin{exercise}\textbf{Exercise 3.}
-
     Let's suppose that $\phi$ is not convex in $ \left( a,b \right)   $ then there exist $x,y \in \left( a,b \right) $ and $t_0 \in [0,1]$ such that
     \[
        \phi \left( \left( 1-t_0 \right) x + t_0 y \right) > \left( 1-t_0 \right) \phi \left( x \right) + t_0 \phi \left( y \right)  
     \]
-    and assume $x < y$. Let's define $g,h:[0,1] \rightarrow \mathbb{R}$ such that,
+    Define $g,h:[0,1] \rightarrow \mathbb{R}$ such that,
     \[
        g \left( t \right) = \phi \left( \left( 1-t \right) x + t y \right)
     \]
     \[
        h \left( t \right) = \left( 1-t \right) \phi \left( x \right) + t \phi \left( y \right)  
-        
     \]
     and let $f = h - g$. We define the nonempty sets $A = \{t \in [0,t_0\left)\ |\ f(t)=0\}$ and $B = \{t \in \left(t_0, 1]\ |\ f(t)=0\}$ given that $f \left( 0 \right) = f \left( 1 \right) = 0$, and let $t_a = \sup A$ and $t_b = \inf B$, we want to see that $t_a \in A$  and $t_b \in B$. Let $\{a_n\}$ and $\{b_n\}$ be sequences in $A$ and $B$ which converge to $t_a$ and $t_b$ respectively, by continuity of $f$ we can see that
     \[
@@ -133,7 +131,6 @@ thus,
 \bigbreak
 
 \begin{exercise}\textbf{Exercise 7.}
-
     Let $0 < p < s < \infty$, an example for the inclusion $L^s \left(  \mu\right)  \subset L^p \left( \mu \right) $ can easily be constructed using Ex.5.
 
     Let $X = \left( 1, \infty \right) $ and $m$ the Lebesgue Measure, we see that neither of the inclusions hold. On the one hand, $\frac{1}{x} \notin L^1 \left( 1, \infty \right)$ and $\frac{1}{x} \in L^2 \left( 1, \infty \right) $. On the other hand, $\frac{I_{ \left( 1,2 \right) }}{ x-1} \notin L^1 \left( 1,\infty \right) $ and $\frac{I_{ \left( 1,2 \right) }}{x-1} \in L^{\frac{1}{2}} \left( 1,\infty \right) $ being $I_A$ the indicator function of $A$. We will only prove the first of these last two statements (the second one can be proved in a simlar manner chosing a convenient partition of $ \left( 1,2 \right) $),
@@ -198,6 +195,20 @@ thus,
    which concludes the proof. 
 
 
+\end{exercise}
+
+\bigbreak
+
+\begin{exercise}\textbf{Exercise 20.}
+    Let $\alpha, \beta \in \mathbb{R}$ and $t \in [0,1]$ we define 
+    \[
+        f \left( x \right) =
+        \begin{cases}
+            \alpha & \text{if}\ 0 \le x < t \\
+            \beta & \text{if}\ t \le x \le 1
+        \end{cases}
+    \]
+    which is clearly measurable and bounded. It only remains to replace $f$ in the given inequality to prove the convexity of $\phi$.
 \end{exercise}
 
 
