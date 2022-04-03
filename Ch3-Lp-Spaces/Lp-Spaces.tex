@@ -211,5 +211,28 @@ thus,
     which is clearly measurable and bounded. It only remains to replace $f$ in the given inequality to prove the convexity of $\phi$.
 \end{exercise}
 
+\bigbreak
+
+\begin{exercise}\textbf{Exercise 23.}
+    Let $\mu$ be a positive measure with $\mu \left( X \right) < \infty$ and $f$ a complex measurable function with $0 < \|f\|_\infty < \infty $ define the sequence
+    \[
+        a_n = \int_X |f|^n\: d\mu  = \|f\|_n^n
+    \]
+    By the given hypothesis we have that first, the hypothesis of Ex.4.e hold and second, $0 < a_n < \infty$ for every $ 1 \le n$ and thus the quotients $\frac{a_{n+1}}{a_n}$ are well defined and we have the inequality,
+    \[
+        \liminf_{n \to \infty} \frac{a_{n+1}}{a_n} \le \liminf_{n \to \infty}a_n^{\frac{1}{n}} \le \limsup_{n \to \infty} a_n^{\frac{1}{n}} \le \limsup_{n \to \infty} \frac{a_{n+1}}{a_n}
+    \]
+    Looking at Ex.4.e we see that is sufices to show that $\frac{a_{n+1}}{a_n}$ converges in $[0,\infty]$ because in that case both limits will exist and equal $\|f\|_\infty $ as $a_n^{\frac{1}{n}} = \|f\|_n$. In order to prove this, we will show that $\frac{a_{n+1}}{a_n}$ is a nondecreasing sequence.
+
+    Observing that $0 < n < n+1 < n+2 < \infty$ and that $2n = \left( n+1 \right) + \left( n+2 \right) $ we can use the observation presented at the end of Ex4 and we have,
+    \[
+        \|f\|_n^n \le \sqrt{\|f\|_{n+1}^{n+1} \|f\|_{n+2}^{n+2}}  
+    \]
+    rearranging the terms we get,
+    \[
+        \frac{a_{n+1}}{a_n} \le \frac{a_{n+2}}{a_{n+1}}
+    \]
+    which proves that the sequence $\frac{a_{n+1}}{a_n}$ is nondecreasing, as we wanted. This concludes the proof.
+\end{exercise}
 
 \end{document}
