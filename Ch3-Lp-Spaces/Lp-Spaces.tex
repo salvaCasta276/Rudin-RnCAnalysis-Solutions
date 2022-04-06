@@ -199,6 +199,26 @@ thus,
 
 \bigbreak
 
+\begin{exercise}\textbf{Exercise 18.}
+    Let's start with statement \textbf{(a)}, for it we will assume that $\mu \left( X \right) < \infty $. Let $A$ be a set in which $\{f_n\}_{n \in \mathbb{N}}$ converges pointwise to $f$ and $\mu \left( X-A \right) = 0$ take $\epsilon > 0$. By Egorov's theorem there exists a set $B \subset A$ in which the sequence converges uniformly and $\mu \left( A-B \right)  < \epsilon$. By the uniform convergence of the sequence there exists $N \in \mathbb{N}$ such that
+    \[
+        |f_n \left( x \right) - f \left( x \right) | < \epsilon \qquad \forall\ x \in B\ \forall\ n > N
+    \]
+    Given that the set of all points which don't satify this condition for $n$ large enough is a subset of $X-B$ it's measure must be less than $\epsilon$ which proves that $\{f_n\}_{n \in \mathbb{N}}$ converges in measure to $f$ and concludes the proof. 
+
+    Now let's prove statement \textbf{(b)}, we won't need the assumption that $\mu \left( X \right) < \infty$ for this one. Assume that $\{f_n\}_{n \in \mathbb{N}}$ doesn't converge in measure to $f$, we start by looking at the case in which $0 \le p < \infty$. By our assumption, there exists $\epsilon > 0$ such that for every $N \in \mathbb{N}$ there exists an $n > N$ such that
+    \begin{equation}
+        \mu \left( \{ x \in X : |f_n \left( x \right) - f \left( x \right) | > \epsilon \} \right) \ge \epsilon
+    \end{equation}
+    Now let $E_{\epsilon, n}$ denote the set in (4), keeping notation as above we have
+    \[
+        \epsilon^{p+1} \le \int_{E_{\epsilon,n}} \epsilon^p \: d\mu \le \int_{E_{\epsilon,n}} |f_n-f|^p\: d\mu \le \int_X |f_n-f|^p\: d\mu 
+    \]
+    and clearly $\|f_n-f\|_p $ doesn't converge to zero which is a contradiction and concludes the proof for $1 \le p < \infty$ (the case in which $p=\infty$ uses the same idea and won't we proven here). It calls my atention that we didn't need the fact that $f_n \in L^p \left( \mu \right) $ and makes me believe that there must be a mistake in the proof...
+\end{exercise}
+
+\bigbreak
+
 \begin{exercise}\textbf{Exercise 20.}
     Let $\alpha, \beta \in \mathbb{R}$ and $t \in [0,1]$ we define 
     \[
