@@ -26,7 +26,7 @@
     \[
         0 = \lim_{n \to \infty} f \left( a_n \right) = f \left( \lim_{n \to \infty} a_n \right) = f \left( t_a \right) 
     \]
-    With this and the fact that $t_a < t_0 < t_b$ as $f \left( t_0 \right) < 0$ we have that $t_a \in A$ and the proof for $t_b \in B$ is analogous. Now by the definition of $t_a$ and $t_b$ we have that $f \left( t \right) < 0$ for all $t \in \left( t_a,t_b \right)$. Finally we take $x'= \left( 1-t_a \right) x+t_ay$ and $y' = \left( 1-t_b \right) x+t_by$ and by working algebraically over $f \left( \frac{t_a+t_b}{2} \right) < 0$ we arrive at the following inquality
+    With this and the fact that $t_a < t_0 < t_b$ as $f \left( t_0 \right) < 0$ we have that $t_a \in A$ and the proof for $t_b \in B$ is analogous. Now by the definition of $t_a$ and $t_b$ and continuity of $f$ we have that $f \left( t \right) < 0$ for all $t \in \left( t_a,t_b \right)$. Finally we take $x'= \left( 1-t_a \right) x+t_ay$ and $y' = \left( 1-t_b \right) x+t_by$ and by working algebraically over $f \left( \frac{t_a+t_b}{2} \right) < 0$ we arrive at the following inquality
     \[
         \phi \left( \frac{x'+y'}{2} \right) > \frac{\phi \left( x' \right) + \phi \left( y' \right) }{2}
     \]
@@ -172,7 +172,7 @@ thus,
 \pagebreak
 
 \begin{exercise}\textbf{Exercise 17.}
-   We start by looking at the case in which $1 \le  p < \infty$ and $\alpha$, we want to see that
+   We start by looking at the case in which $1 \le  p < \infty$, we want to see that
    \begin{equation}
        | \alpha - \beta |^p \le 2^{p-1} \left( |\alpha|^p + |\beta|^p \right) 
    \end{equation}
@@ -215,8 +215,33 @@ thus,
         \epsilon^{p+1} \le \int_{E_{\epsilon,n}} \epsilon^p \: d\mu \le \int_{E_{\epsilon,n}} |f_n-f|^p\: d\mu \le \int_X |f_n-f|^p\: d\mu 
     \]
     and clearly $\|f_n-f\|_p $ doesn't converge to zero which is a contradiction and concludes the proof for $1 \le p < \infty$ (the case in which $p=\infty$ uses the same idea and won't we proven here). It calls my atention that we didn't need the fact that $f_n \in L^p \left( \mu \right) $ and makes me believe that there must be a mistake in the proof...
-\end{exercise}
 
+    It only remains to prove \textbf{(c)}, we won't need the assumption that $\mu \left( X \right) < \infty$. We start by taking a subsequence $\{f_{n_j}\}_{j \in \mathbb{N}}$ such that
+    \begin{equation}
+        \mu \left( E_{2^{-j}, n_j} \right) < 2^{-j}
+    \end{equation}
+\end{exercise}
+    with $E_{\epsilon,n}$ defined as in (4). Observe that for every $\epsilon > 0$ and every $\delta > 0$ we can ask for a $m$ large enough such that,
+    \begin{equation}
+        \mu \left( A_m \right) := \mu \left( \bigcup_{j = m}^{\infty} E_{2^{-j},n_j }\right) \le \sum_{j=m}^{\infty} \mu \left( E_{2^{-j},n_j} \right) < \epsilon 
+    \end{equation}
+    and
+    \begin{equation}
+        2^{-j} < \delta \qquad \forall j \ge m
+    \end{equation}
+    As defined in (6) we clearly have $A_{m+1} \subset A_m$. Now suposse that the sequence $\{f_{n_j}\}_{j \in \mathbb{N}}$ doesn't converge poitwise to any point in a set $B \subset X$ with $\mu \left( B \right) > 0$ we can ask for an m large enough such that (6) holds for $\epsilon = min\{1, \mu \left( B \right)\}$ (we can't just pick $\mu \left( B \right) $ as it could equal $\infty$). In that case $B$ won't be a subset of $A_m$ and we can ask for a point $x \in B - A_m$. As $x \in B$, our sequence doesn't converge in $x$ and there exists an $\gamma > 0$ such that for all $N \in \mathbb{N}$ there exists a $j > N$ such that
+    \begin{equation}
+        |f_{n_j} \left( x \right) - f \left( x \right) | \ge  \gamma
+    \end{equation}
+    Now take $m' \ge m$ such that (7) holds for $\delta = \gamma$ then $x \in B-A_{m'}$  as $A_{m'} \subset A_m$. Given that if for some $j>m'$
+    \[
+        |f_{n_j} \left( y \right) - f \left( y \right) | > 2^{-m'} \implies y \in A_{m'} 
+    \]
+    as $x \notin A_{m'}$ we must have that for all $j>m'$
+    \[
+        |f_{n_j} \left( x \right) - f \left( x \right) | \le 2^{-m'} < \delta = \gamma
+    \]
+    which contradicts (8) and proves that the sequence $\{f_{n_j}\}_{j \in \mathbb{N}}$ converges a.e. in $X$. This concludes the proof.
 \bigbreak
 
 \begin{exercise}\textbf{Exercise 20.}
