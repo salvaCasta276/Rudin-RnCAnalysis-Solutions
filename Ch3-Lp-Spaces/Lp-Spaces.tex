@@ -10,7 +10,9 @@
 
 \maketitle
 
-\begin{exercise}\textbf{Exercise 3.}
+\section*{Exercise Solutions}
+
+\begin{exercise}\textbf{Exercise 3.3.}
     Let's suppose that $\phi$ is not convex in $ \left( a,b \right)   $ then there exist $x,y \in \left( a,b \right) $ and $t_0 \in [0,1]$ such that
     \[
        \phi \left( \left( 1-t_0 \right) x + t_0 y \right) > \left( 1-t_0 \right) \phi \left( x \right) + t_0 \phi \left( y \right)  
@@ -43,7 +45,7 @@
 
 \bigbreak
 
-\begin{exercise}\textbf{Exercise 4.}
+\begin{exercise}\textbf{Exercise 3.4.}
     Let $f$ be a complex measurable function on $X$ and $\mu$ a positive measure on $X$, define
     \[
         \phi \left( p \right) = \int_X |f|^p\: d\mu = \|f\|_p^p \quad \left( 0 < p < \infty \right) 
@@ -94,23 +96,12 @@
 
 \bigbreak
 
-\begin{observation}\textbf{Observation}
-
-Let $0 < r < p < s < +\infty$ with $p-r=s-p$ which is the same as $2p=r+s$ then using Holder's inequality we get,  
-\[
-    \|f\|_p^p = \|f^p\|_1 = \|f^{\frac{r}{2}}f^{\frac{s}{2}}\|_1 \le \|f^{\frac{r}{2}}\|_2 \|f^{\frac{s}{2}}\|_2 = \left( \|f\|_r^r \|f\|_s^s   \right)^{\frac{1}{2}}    
-\]
-thus,
-\[
-    \|f\|_p^p \le \sqrt{\|f\|_r^r \|f\|_s^s  }   
-\]
-\end{observation}
 
 \end{exercise}
 
 \bigbreak
 
-\begin{exercise}\textbf{Exercise 5.}
+\begin{exercise}\textbf{Exercise 3.5.}
     In order to prove that $ \|f\|_p \le \|f\|_r$ if $0 < p < r \le \infty$ we start by looking at case in which both $p$ and $r$ are finite. For every $x \in \left( 0,\infty \right) $ the function $x^{c}$ is twice differentiable and we have that
     \[
         \left( x^c \right)'' = \left( x^{c-1}c \right) ' = c \left( c-1 \right) x^{c-2}
@@ -130,8 +121,8 @@ thus,
 
 \bigbreak
 
-\begin{exercise}\textbf{Exercise 7.}
-    Let $0 < p < s < \infty$, an example for the inclusion $L^s \left(  \mu\right)  \subset L^p \left( \mu \right) $ can easily be constructed using Ex.5.
+\begin{exercise}\textbf{Exercise 3.7.}
+    Let $0 < p < s < \infty$, an example for the inclusion $L^s \left(  \mu\right)  \subset L^p \left( \mu \right) $ can easily be constructed using \textbf{Ex.3.5}.
 
     Let $X = \left( 1, \infty \right) $ and $m$ the Lebesgue Measure, we see that neither of the inclusions hold. On the one hand, $\frac{1}{x} \notin L^1 \left( 1, \infty \right)$ and $\frac{1}{x} \in L^2 \left( 1, \infty \right) $. On the other hand, $\frac{I_{ \left( 1,2 \right) }}{ x-1} \notin L^1 \left( 1,\infty \right) $ and $\frac{I_{ \left( 1,2 \right) }}{x-1} \in L^{\frac{1}{2}} \left( 1,\infty \right) $ being $I_A$ the indicator function of $A$. We will only prove the first of these last two statements (the second one can be proved in a simlar manner chosing a convenient partition of $ \left( 1,2 \right) $),
     \[
@@ -155,7 +146,7 @@ thus,
 
 \bigbreak
 
-\begin{exercise}$\textbf{Exercise 10.}$
+\begin{exercise}$\textbf{Exercise 3.10.}$
 Given that $fg\ge1$ and both $f$ and $g$ are positive we have $f \ge \frac{1}{g}$ and using Holder's inequality and the fact that $\mu\left(\Omega\right)=1$,
 
 \[
@@ -171,7 +162,7 @@ thus,
 
 \pagebreak
 
-\begin{exercise}\textbf{Exercise 17.}
+\begin{exercise}\textbf{Exercise 3.17.}
    We start by looking at the case in which $1 \le  p < \infty$, we want to see that
    \begin{equation}
        | \alpha - \beta |^p \le 2^{p-1} \left( |\alpha|^p + |\beta|^p \right) 
@@ -188,7 +179,7 @@ thus,
    \begin{equation}
        |\alpha - \beta| \le \left( \frac{1}{2} | 2\alpha |^p + \frac{1}{2} | 2\beta | ^p \right) ^{\frac{1}{p}} = \|f\|_p 
    \end{equation}
-   Observing that $\mu \left( X \right) = 1$ and $0 < \|f\|_\infty $ by Ex.5 we know that $\|f\|_1 $ \le $\|f\|_p $ and we have
+   Observing that $\mu \left( X \right) = 1$ and $0 < \|f\|_\infty $ by \textbf{Ex.3.5} we know that $\|f\|_1 $ \le $\|f\|_p $ and we have
    \begin{equation}
        |\alpha - \beta| \le |\alpha| + |\beta| = \|f\|_1 \le \|f\|_p 
    \end{equation}
@@ -199,7 +190,7 @@ thus,
 
 \bigbreak
 
-\begin{exercise}\textbf{Exercise 18.}
+\begin{exercise}\textbf{Exercise 3.18.}
     Let's start with statement \textbf{(a)}, for it we will assume that $\mu \left( X \right) < \infty $. Let $A$ be a set in which $\{f_n\}_{n \in \mathbb{N}}$ converges pointwise to $f$ and $\mu \left( X-A \right) = 0$ take $\epsilon > 0$. By Egorov's theorem there exists a set $B \subset A$ in which the sequence converges uniformly and $\mu \left( A-B \right)  < \epsilon$. By the uniform convergence of the sequence there exists $N \in \mathbb{N}$ such that
     \[
         |f_n \left( x \right) - f \left( x \right) | < \epsilon \qquad \forall\ x \in B\ \forall\ n > N
@@ -229,22 +220,16 @@ thus,
     \begin{equation}
         2^{-j} < \delta \qquad \forall j \ge m
     \end{equation}
-    As defined in (6) we clearly have $A_{m+1} \subset A_m$. Now suposse that the sequence $\{f_{n_j}\}_{j \in \mathbb{N}}$ doesn't converge poitwise to any point in a set $B \subset X$ with $\mu \left( B \right) > 0$ we can ask for an m large enough such that (6) holds for $\epsilon = min\{1, \mu \left( B \right)\}$ (we can't just pick $\mu \left( B \right) $ as it could equal $\infty$). In that case $B$ won't be a subset of $A_m$ and we can ask for a point $x \in B - A_m$. As $x \in B$, our sequence doesn't converge in $x$ and there exists an $\gamma > 0$ such that for all $N \in \mathbb{N}$ there exists a $j > N$ such that
-    \begin{equation}
-        |f_{n_j} \left( x \right) - f \left( x \right) | \ge  \gamma
-    \end{equation}
-    Now take $m' \ge m$ such that (7) holds for $\delta = \gamma$ then $x \in B-A_{m'}$  as $A_{m'} \subset A_m$. Given that if for some $j>m'$
-    \[
-        |f_{n_j} \left( y \right) - f \left( y \right) | > 2^{-m'} \implies y \in A_{m'} 
-    \]
-    as $x \notin A_{m'}$ we must have that for all $j>m'$
+    As defined in (6) we clearly have $A_{m+1} \subset A_m$. Now suposse that the sequence $\{f_{n_j}\}_{j \in \mathbb{N}}$ doesn't converge poitwise to any point in a set $B \subset X$ with $\mu \left( B \right) > 0$ we can ask for an m large enough such that (6) holds for $\epsilon = min\{1, \mu \left( B \right)\}$ (we can't just pick $\mu \left( B \right) $ as it could equal $\infty$). In that case $B$ won't be a subset of $A_m$ and we can ask for a point $x \in B - A_m$.
+
+    Now take $\gamma > 0$ and $m' \ge m$ such that (7) holds for $\delta = \gamma$ then $x \in B-A_{m'}$  as $A_{m'} \subset A_m$. Given that if $|f_{n_j} \left( y \right) - f \left( y \right) | > 2^{-m'}$ for some $j \ge m'$ we have $ y \in A_{m'}$, as $x \notin A_{m'}$ it must be the case that for all $j \ge m'$
     \[
         |f_{n_j} \left( x \right) - f \left( x \right) | \le 2^{-m'} < \delta = \gamma
     \]
-    which contradicts (8) and proves that the sequence $\{f_{n_j}\}_{j \in \mathbb{N}}$ converges a.e. in $X$. This concludes the proof.
+    and then we have that $f_{n_j} \left( x \right) \rightarrow f \left( x \right) $ which contradicts our assumption and concludes the proof.
 \bigbreak
 
-\begin{exercise}\textbf{Exercise 20.}
+\begin{exercise}\textbf{Exercise 3.20.}
     Let $\alpha, \beta \in \mathbb{R}$ and $t \in [0,1]$ we define 
     \[
         f \left( x \right) =
@@ -258,18 +243,18 @@ thus,
 
 \bigbreak
 
-\begin{exercise}\textbf{Exercise 23.}
+\begin{exercise}\textbf{Exercise 3.23.}
     Let $\mu$ be a positive measure with $\mu \left( X \right) < \infty$ and $f$ a complex measurable function with $0 < \|f\|_\infty < \infty $ define the sequence
     \[
         a_n = \int_X |f|^n\: d\mu  = \|f\|_n^n
     \]
-    By the given hypothesis we have that first, the hypothesis of Ex.4.e hold and second, $0 < a_n < \infty$ for every $ 1 \le n$ and thus the quotients $\frac{a_{n+1}}{a_n}$ are well defined and we have the inequality,
+    By the given hypothesis we have that first, the hypothesis of \textbf{Ex.3.4.e} hold and second, $0 < a_n < \infty$ for every $ 1 \le n$ and thus the quotients $\frac{a_{n+1}}{a_n}$ are well defined and we have the inequality,
     \[
         \liminf_{n \to \infty} \frac{a_{n+1}}{a_n} \le \liminf_{n \to \infty}a_n^{\frac{1}{n}} \le \limsup_{n \to \infty} a_n^{\frac{1}{n}} \le \limsup_{n \to \infty} \frac{a_{n+1}}{a_n}
     \]
-    Looking at Ex.4.e we see that is sufices to show that $\frac{a_{n+1}}{a_n}$ converges in $[0,\infty]$ because in that case both limits will exist and equal $\|f\|_\infty $ as $a_n^{\frac{1}{n}} = \|f\|_n$. In order to prove this, we will show that $\frac{a_{n+1}}{a_n}$ is a nondecreasing sequence.
+    Looking at \textbf{Ex.3.4.e} we see that is sufices to show that $\frac{a_{n+1}}{a_n}$ converges in $[0,\infty]$ because in that case both limits will exist and equal $\|f\|_\infty $ as $a_n^{\frac{1}{n}} = \|f\|_n$. In order to prove this, we will show that $\frac{a_{n+1}}{a_n}$ is a nondecreasing sequence.
 
-    Observing that $0 < n < n+1 < n+2 < \infty$ and that $2 \left( n+1 \right) = n + \left( n+2 \right) $ we can use the observation presented at the end of Ex4 and we have,
+    Observing that $0 < n < n+1 < n+2 < \infty$ and that $2 \left( n+1 \right) = n + \left( n+2 \right) $ we can use \textbf{Obs.3.1} and we get,
     \[
         \|f\|_{n+1}^{n+1} \le \sqrt{\|f\|_n^n \|f\|_{n+2}^{n+2}}  
     \]
@@ -279,5 +264,60 @@ thus,
     \]
     which proves that the sequence $\frac{a_{n+1}}{a_n}$ is nondecreasing, as we wanted. This concludes the proof.
 \end{exercise}
+
+\section*{Useful Properties}
+
+\begin{theorem}\textbf{Theorem 3.1 (Young's Inequality)}
+
+    Let $a,b \in \mathbb{R}_{ \ge 0}$ and let $1 < q,p < \infty$ with $\frac{1}{p}+\frac{1}{q}=1$ we have
+    \[
+        ab \le \frac{a^q}{q} + \frac{b^p}{p}
+    \]
+    \textit{Proof.} If $a$ or $b$ equal $0$ the proof is trivial, so assum they don't. Taking $\ln$ on both sides we get
+    \[
+        \frac{\ln \left( a^q \right) }{q} + \frac{\ln \left( b^p \right) }{p} \le \ln \left( \frac{a^q}{q} + \frac{b^p}{p} \right) 
+    \]
+    which given that $\frac{1}{p} + \frac{1}{q} = 1$ holds by the concavity of the logarith and concludes the proof.
+\end{theorem}
+
+\bigbreak
+
+\begin{observation}\textbf{Observation 3.1}
+
+Let $0 < r < p < s < +\infty$ with $p-r=s-p$ which is the same as $2p=r+s$ then using Holder's inequality we get,  
+\[
+    \|f\|_p^p = \|f^p\|_1 = \|f^{\frac{r}{2}}f^{\frac{s}{2}}\|_1 \le \|f^{\frac{r}{2}}\|_2 \|f^{\frac{s}{2}}\|_2 = \left( \|f\|_r^r \|f\|_s^s   \right)^{\frac{1}{2}}    
+\]
+thus,
+\[
+    \|f\|_p^p \le \sqrt{\|f\|_r^r \|f\|_s^s  }   
+\]
+\end{observation}
+
+\begin{theorem}\textbf{Teorem 3.2}
+    Let $\phi : \left( a,b \right) \rightarrow \mathbb{R}$ be a convex function with $a,b \in [-\infty,\infty]$ then $\phi$ has later derivatives on every point in $ \left( a,b \right) $.
+
+    \textit{Proof.} By convexity of $\phi$ for every $a < x < y < b$ and $a< z <b$  we have,
+    \begin{equation}
+        \frac{\phi \left( z \right) - \phi \left( x \right) }{z - x} \le \frac{\phi \left( z \right) - \phi \left( y \right) }{z - y}
+    \end{equation}
+
+    Let $c \in \left( a,b \right) $ define $f_c: \left( a,b \right) \rightarrow \mathbb{R}$ such that
+    \[
+    f_c \left( x \right) = 
+       \begin{cases}
+           \frac{\phi(c)-\phi(x)}{c-x} & \text{if}\  c \neq x \\
+           0 & \text{if}\ c = x
+       \end{cases}
+    \]
+    by \textbf{(8)} we have that $f_c$ is nondecreasing in $ \left( a,c \right) $ and in $ \left( c,b \right) $. With this in mind we can see that the lateral limis of $f_c$ exists in c and equal
+    \[
+        \lim_{x \to c^+}f_c \left( x \right) = f_{+}' \left( c \right) = \sup_{a \le x \le c}\frac{\phi(c)-\phi(x)}{c-x} 
+    \]
+    \[
+        \lim_{x \to c^-}f_c \left( x \right) = f_{-}' \left( c \right)  = \inf_{c \le x \le b}\frac{\phi(c)-\phi(x)}{c-x}
+    \]
+    This concludes the proof.
+\end{theorem}
 
 \end{document}
