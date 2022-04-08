@@ -1,0 +1,33 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\author{Salvador Castagnino \\ scastagnino@itba.edu.ar}
+\date{} 
+\title{Chapter 1 - Abstract Integration}
+
+\begin{document}
+
+\maketitle 
+
+\section*{Exercise Solutions}
+
+\section*{Useful Properties}
+
+\begin{theorem}\textbf{Theorem 1.1 (Reverse Fatou's Lemma)}
+    Let $\{f_n\}_{n \in \mathbb{N}}$ be a sequences of measurable functions with $f_n : X \rightarrow [0,\infty]$, if there exsits $g \in L^p \left( \mu \right) $ such that $f_n \le g$ for all $n \ge 1$ then 
+    \[
+        \limsup_{n \to \infty} \int_X f_n\: d\mu \le \int_X \limsup_{n \to \infty} f_n \: d\mu 
+    \]
+    \textit{Proof.} As $f_n \le g$ for all $n \ge 1$ the functions $h_n = g-f_n$ are both measurable and nonnegative, thus applying Fatou's Lemma to $h_n$ we get,
+    \[
+        \int_X \liminf_{n \to \infty} \left( g-f_n \right) \: d\mu \le \liminf_{n \to \infty} \int_X g-f_n\: d\mu 
+    \]
+    rearranging both sides we get,
+    \[
+        \int_X g\: d\mu - \limsup_{n \to \infty} \int_X f_n\: d\mu \le \int_X g\: d\mu - \limsup_{n \to \infty} \int_X f_n\: d\mu 
+    \]
+    Finally, as $\int_X g\: d\mu < \infty$ we can cancel on both sides and multiply by $-1$ getting the desired result.
+\end{theorem}
+
+\end{document}
