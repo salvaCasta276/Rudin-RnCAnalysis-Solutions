@@ -38,7 +38,7 @@ where $[x_1, ..., x_n]$ denotes the span of $\{x_1, ..., x_n\}$, let's see that 
 \]
 Every $v_j$ can be expressed as $x_{n_j}$, so let $v_k$ be such that $n_k$ is the greates index between all $n_j$, we then have
 \[
-    v_k = \sum_{1 \le n \neq k \le m} \frac{\alpha_n v_n}{\alpha_k} - \frac{v_{m+1}}{\alpha_k}
+    v_k = \frac{v_{m+1}}{\alpha_k} - \sum_{1 \le n \neq k \le m} \frac{\alpha_n v_n}{\alpha_k}
 \]
 which clashes with the construction of A, thus A is linearly independent. By \textbf{Ex4.3} we can build from A a countable orthnormal set $\{u_n\}$ such that $[v_1, ..., v_n] = [u_1, ..., u_n]$ for all $n \ge 1$. Given that every $x_n$ can be expressed as a linear combination of elements in $A$, one can see that every $x_n$ will be in $[u_1, ..., u_m]$ for some $m$. Then we can see that every $x_n$ is an element of $\overline{P}$, with P the set of finite linear combinations of elements in $\{u_n\}$, which in turn imples that $P$ is dense in $H$ and concludes the proof. 
 \end{exercise}
