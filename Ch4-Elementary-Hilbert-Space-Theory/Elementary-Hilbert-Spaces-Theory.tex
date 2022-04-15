@@ -1,0 +1,48 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\author{Salvador Castagnino \\ scastagnino@itba.edu.ar}
+\date{}
+\title{Chapter 4 - Elementary Hilbert Space Theory}
+
+\begin{document}
+
+\maketitle
+
+\section*{Exercise Solutions}
+
+\begin{exercise}\textbf{Exercise 4.}
+    We start by assuming that $\{u_n\}_{n \in \mathbb{N}}$ is a countable maximal orthonormal system in $H$, we want to see that $H$ is separable. Observe that it sufices to find a countable set $A$ such that $P \subset \overline{A}$, with $P$ the set of all finite linear combinations of elements in $\{u_n\}_{n \in \mathbb{N}}$. Define the set $A$ to be,
+    \[
+        A = \Bigg\{ \sum_{n=1}^{N} \left( q_n + i p_n \right)  u_n : q_n,p_n \in \mathbb{Q},\ N \ge 1\Bigg\} 
+    \]
+    which is clearly countable. Take $x \in P$, we have $x = \sum_{n=1}^{N} c_n u_n $ for some $c_n$ complex numbers and some $N \ge 1$ . Observe that for every $1 \le n \le N$ there exist $\{q_{nk}\}_{k \in \mathbb{N}}$ and $\{p_{nk}\}_{k \in \mathbb{N}}$ sequences of rational numbers such that $ \left( q_{nk} + i p_{nk} \right) \rightarrow c_n$ as $k$ goes to infinity. Then let $\epsilon > 0$ we can ask for a $k$ large enough such that $|\left( q_{nk} + i p_{nk} \right) - c_n| < \frac{\epsilon}{N}$ for all $1 \le n \le N$, we in turn have
+    \[
+        \|\sum_{n=1}^{N} \left( q_{nk} + i p_{nk} \right)u_n - \sum_{n=1}^{N} c_n u_n \| \le \sum_{n=1}^{N} |\left( q_{nk} + i p_{nk} \right) - c_n| < \sum_{n=1}^{N} \frac{\epsilon}{N} < \epsilon 
+    \]
+    Given that every element in $P$ can be aproximated by elements in $A$ we have that, $P \subset \overline{A}$, which concludes the proof.
+
+\bigbreak
+
+Now suppose that $\{x_n\}_{n \in \mathbb{N}}$ is countable and dense in $H$, we are going to build a countable maximal orthonormal system. Let $A$ be the set such that
+\[
+   \begin{cases}
+      x_1 \in A \\
+      x_{n+1} \in A \text{ iff } x_{n+1} \notin [ x_1, ..., x_n ]
+   \end{cases} 
+\]
+where $[x_1, ..., x_n]$ denotes the span of $\{x_1, ..., x_n\}$, let's see that $A$ is linearly independent. Suppose that for sume $v_1, ..., v_{m+1}$ in $A$ and $\alpha_1, ..., \alpha_m$ nonzero complex numbers we have that
+\[
+    \sum_{j=1}^{m} \alpha_j v_j = v_{m+1}
+\]
+Every $v_j$ can be expressed as $x_{n_j}$, so let $v_k$ be such that $n_k$ is the greates index between all $n_j$, we then have
+\[
+    v_k = \sum_{1 \le n \neq k \le m} \frac{\alpha_n v_n}{\alpha_k} - \frac{v_{m+1}}{\alpha_k}
+\]
+which clashes with the construction of A, thus A is linearly independent. By \textbf{Ex4.3} we can build from A a countable orthnormal set $\{u_n\}$ such that $[v_1, ..., v_n] = [u_1, ..., u_n]$ for all $n \ge 1$. Given that every $x_n$ can be expressed as a linear combination of elements in $A$, one can see that every $x_n$ will be in $[u_1, ..., u_m]$ for some $m$. Then we can see that every $x_n$ is an element of $\overline{P}$, with P the set of finite linear combinations of elements in $\{u_n\}$, which in turn imples that $P$ is dense in $H$ and concludes the proof. 
+\end{exercise}
+
+\section*{Useful Properties}
+
+\end{document}
