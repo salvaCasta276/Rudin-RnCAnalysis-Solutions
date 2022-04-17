@@ -43,6 +43,36 @@ Every $v_j$ can be expressed as $x_{n_j}$, so let $v_k$ be such that $n_k$ is th
 which clashes with the construction of A, thus A is linearly independent. By \textbf{Ex4.3} we can build from A a countable orthnormal set $\{u_n\}$ such that $[v_1, ..., v_n] = [u_1, ..., u_n]$ for all $n \ge 1$. Given that every $x_n$ can be expressed as a linear combination of elements in $A$, one can see that every $x_n$ will be in $[u_1, ..., u_m]$ for some $m$. Then we can see that every $x_n$ is an element of $\overline{P}$, with P the set of finite linear combinations of elements in $\{u_n\}$, which in turn imples that $P$ is dense in $H$ and concludes the proof. 
 \end{exercise}
 
+\bigbreak
+
+\begin{exercise}\textbf{Exercise 6.}
+    We start by supposing that $\sum_{n=1}^{\infty} \delta_n^2 < \infty$, let's prove that $S$ is compact. In ordert to do this, let $\{x_n\}_{n \in \mathbb{N}}$ be a sequence in $S$, we will construct a convergent subsequence.
+\begin{itemize}
+    \item Let $y_{n1} = \hat{x}_n \left( 1 \right)$, notation as in the book. Given that the closed disk $\overline{B} \left( 0,\delta_1 \right)$ is compact and $y_{n1} \in \overline{B} \left( 0, \delta_1 \right) $, we can find $y_{n_k1}$ a convergent subsequence of $y_{n1}$ which converges to a $y_1$ in that interval. We replace our original sequence $x_n$ for the new subsequence $x_{n_k}$, define $z_1 = x_{n_1}$  and proceed be repeating what we just did but for the second terms (we also rename the new sequence $x_{n_k}$ as $x_n$ for the sake of simplicity).
+    \item Notation as above we can find a convergent subsequence $y_{n_k2}$ of the sequence of second terms which converges in $\overline{B} \left( 0,\delta_2 \right) $ to a $y_2$ in that interval. We again define $z_2 = x_{n_2}$ and replace $x_n$ by it's subsequence $x_{n_k}$. Observe that the sequence of first terms still converges as it's a subsequence of a convergent sequence.  
+\end{itemize}
+Repeating this process an arbirary number of times we build a sequence $z_n$ in S and a sequence of numbers $y_n$ in $\overline{B} \left( 0,\delta_n \right) $ for each $n$. Given that $0 \le |y_n| \le \delta_n$ for all $n \ge 1$ we have that $\sum_{n=1}^{\infty} |y_n|^2 < \infty $ and thus there exists a $y \in S$ such that $\hat{y} \left( n \right) = y_n$ for all $n \ge 1$. By the definition of the sequences $z_n$ and $y_n$, given $\epsilon > 0$ we can find $N, M \in \mathbb{N}$ large enough such that,
+\begin{equation}
+    \sum_{n=N}^{\infty} |\hat{z}_m \left( n \right)  - y_n|^2 \le \sum_{n=N}^{\infty} 4\delta_n^2   < \frac{\epsilon}{2}
+\end{equation}
+\begin{equation}
+    |\hat{z}_m \left( n \right)  - y_n|^2 < \frac{\epsilon}{2^{n+1}} \quad \forall\ 1 \le n < N
+\end{equation}
+for all $m \ge M$. With this in mind we can see that $\sum_{n=1}^{\infty} |\hat{z}_m \left( n \right) - y_n|^2 =  \|z_m-y\|<\epsilon$ for all $m \ge M$ which shows that $z_n$ converges to $y$ in $S$ and concludes the proof. 
+
+\bigbreak
+
+Now suppose that $S$ is compact and that $\sum_{n=1}^{\infty} \delta_n^2 = \infty $, we will get to a contradiction. Define $x_k = \sum_{n=1}^{\infty} c_{kn}u_n $ with
+\[
+    c_{kn} = 
+    \begin{cases}
+        \delta_n & \text{if } n \le k \\
+        0 & \text{else}
+    \end{cases}
+\]
+Clearly $x_k \in S$ for all $k \ge 1$  and $\|x_k\| \rightarrow \sum_{n=1}^{\infty} \delta_n^2 = \infty$ but given that $\|x_k\| \le \|x_k-x\| + \|x\|$ for every $x \in S$ the sequence $x_n$ cannot converge which implies that $S$ is no compact, contradicting our assumption and concluding the proof.  
+\end{exercise}
+
 \section*{Useful Properties}
 
 \end{document}
