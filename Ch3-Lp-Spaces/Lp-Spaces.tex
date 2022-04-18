@@ -142,6 +142,7 @@
        \sum_{n=1}^{\infty} |a_n|^s = \sum_{n=1}^{M} |a_n|^s + \sum_{n=M+1}^{\infty} |a_n|^s < \sum_{n=1}^{M} |a_n|^s + \sum_{n=M+1}^{\infty} |a_n|^p < \infty  
     \]
     As we wanted, $\{a_n\} \in \ell ^s \left( \mathbb{N} \right) $, which concludes the proof.
+    Some conditions which imply inclusion can be found in the section of useful properties.
 \end{exercise}
 
 \bigbreak
@@ -284,7 +285,7 @@ thus,
 
 \begin{observation}\textbf{Observation 3.1}
 
-Let $0 < r < p < s < +\infty$ with $p-r=s-p$ which is the same as $2p=r+s$ then using Holder's inequality we get,  
+Let $0 < r < p < s < +\infty$ with $p-r=s-p$ which is the same as $2p=r+s$ and let $f$ be a masurable function, using Holder's inequality we get,  
 \[
     \|f\|_p^p = \|f^p\|_1 = \|f^{\frac{r}{2}}f^{\frac{s}{2}}\|_1 \le \|f^{\frac{r}{2}}\|_2 \|f^{\frac{s}{2}}\|_2 = \left( \|f\|_r^r \|f\|_s^s   \right)^{\frac{1}{2}}    
 \]
@@ -293,6 +294,18 @@ thus,
     \|f\|_p^p \le \sqrt{\|f\|_r^r \|f\|_s^s  }   
 \]
 \end{observation}
+
+\begin{observation}\textbf{Observation 3.2}
+    Let $1 \le r < p < \infty$ and let $f$ be a measurable function, using Holder's inequality we get,
+    \[
+        \|f\|_r = \left( \|f^r\|_1  \right)^{\frac{1}{r}} \le \left( \|1\|_q \|f^r\|_ \frac{p}{r} \right)^\frac{1}{r} = \mu \left( X \right) ^\frac{1}{rq} \|f\|_p   
+    \]
+    with $q = \left( 1 - \frac{r}{p} \right)^{-1}$
+
+    Observe that if $\mu \left( X \right) < \infty$ we get that $L^p \left( \mu \right) \subset L^r \left( \mu \right) $.
+\end{observation}
+
+\bigbreak
 
 \begin{theorem}\textbf{Teorem 3.2}
     Let $\phi : \left( a,b \right) \rightarrow \mathbb{R}$ be a convex function with $a,b \in [-\infty,\infty]$ then $\phi$ has lateral derivatives on every point in $ \left( a,b \right) $.
