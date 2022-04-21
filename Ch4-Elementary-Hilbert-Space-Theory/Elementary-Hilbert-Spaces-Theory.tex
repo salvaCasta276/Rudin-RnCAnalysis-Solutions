@@ -1,6 +1,7 @@
 \documentclass{article}
 \usepackage{amsmath}
 \usepackage{amsfonts}
+\usepackage{xcolor}
 
 \author{Salvador Castagnino \\ scastagnino@itba.edu.ar}
 \date{}
@@ -78,7 +79,34 @@ Clearly $x_k \in S$ for all $k \ge 1$  and $\|x_k\|^2 \rightarrow \sum_{n=1}^{\i
 
 \bigbreak
 
-Finally to prove assertion \textbf{(c)} we observe that $\frac{r}{2}u_n \in B \left( 0,r \right)$ for all $r > 0$ and all $n \ge 1$. With this in mind, and the fact that $\|u_n\| \rightarrow \infty $, the sequences $\|\frac{r}{2}u_n\| $ have no convergent subsequence in $\overline{B} \left( 0,r \right) $ which in turn shows that $0$ has no neighbourhood with compact clousure in $H$ which concludes the proof. 
+Finally to prove assertion \textbf{(c)} we observe that $\frac{r}{2}u_n \in B \left( 0,r \right)$ for all $r > 0$ and all $n \ge 1$. With this in mind, and the fact that $\|u_n\|$ has no covergent subsequence, the sequences $\|\frac{r}{2}u_n\| $ have no convergent subsequence in $\overline{B} \left( 0,r \right) $ which in turn shows that $0$ has no neighbourhood with compact closure in $H$ which concludes the proof. 
+\end{exercise}
+
+\bigbreak
+
+\begin{exercise}\textbf{Exercise 11.}
+We claim that the set $ E = \{ f_n \}_{n \in \mathbb{N}}$  with $f_n \left( x \right) = \sin \left( nx \right) I_{[0, \pi+\frac{\pi}{n}]}$ (where $I_A$ stands for the indicator function of $A$) is closed in $L^2 \left( T \right) $ and has no element of smallest norm. It can be easily verified that $E$ is a subset of $L^2 \left( T \right) $, we proceed to prove the other assertions.
+
+\bigbreak
+
+We start by proving that E is closed, to do this we will prove that the sequence $\{f_n\}_{n \in \mathbb{N}}$ has no convergent subsequence in $L^2 \left( T \right) $ and thus $E$ equals it's closure. Before starting the proof, observe that most properties of $L^2 \left( \mu \right) $ spaces hold for $L^2 \left( T \right) $ as their norms are just a scalar multiplication appart, we won't give the proofs for them here. Suppose that there exists a subsequence $\{f_{n_j}\}_{j \in \mathbb{N}}$ convergent in $L^2 \left( T \right) $, by \textcolor{blue}{Th3.12} this subsequence has a subsequence $\{f_{n_k}\}_{ k \in \mathbb{N}$ which converges pointwise a.e in $[0, 2\pi]$. Given that $f_n \left( x \right) = \sin \left( nx \right) $ for all $x \in [0,\pi]$, this conclusion contradicts the result obtained in Ex4.10 saying that the set in which $\sin \left( n_k x \right) $ converges has null measure and proves our assertion.
+
+\bigbreak
+
+Now, to prove that $E$ has no element of smallest norm let's prove that $\inf_{n \ge 1}\|f_n\|_2 = \frac{1}{2}$ and that this infimum is not attained in $E$. To do this we start by observing that
+\begin{equation}
+    \bigg\{ \frac{1}{2\pi} \int_0^\pi \sin^2 \left( nx \right) \: dx \bigg\}^\frac{1}{2} = \frac{1}{2}
+\end{equation}
+for all $n \in \mathbb{N}$ and that $f_n \left( x \right) = \sin \left( nx \right) I_{[0,\pi]} + \sin \left( nx \right) I_{(\pi, \pi + \frac{\pi}{n}]}$. Now using (3) we can write
+\[
+    \|f_n\|_2 = \bigg\{ \frac{1}{2\pi} \int_0^\pi \sin^2 \left( nx \right) \: dx + \frac{1}{2\pi} \int_\pi^{\pi + \frac{\pi}{n}} \sin^2 \left( nx \right) \: dx \bigg\}^\frac{1}{2} > \frac{1}{2}
+\]
+which shows that $\frac{1}{2}$ is smaller than the norm of every element in $E$. With this in mind and the fact that $\sin \left( x \right) $ is a bounded function using Minkowski's inequality we get,
+\[
+    0 < \|f_n\|_2 - \frac{1}{2}\le  \|\sin \left( nx \right) I_{(\pi, \pi + \frac{\pi}{n}]}\|_2 \rightarrow 0 
+\]
+This final assertion shows that $E$ has no element of smallest norm which concludes the proof.
+    
 \end{exercise}
 
 \section*{Useful Properties}
